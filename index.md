@@ -1,29 +1,27 @@
-## Welcome to GitHub Pages
+## Welcome to Aidan's Signed Distance Field Study
 
-You can use the [editor on GitHub](https://github.com/iXiphos/iXiphos.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+### Signed Distance Fields
 
-Test Repo
+  Lets talk about signed distance fields. Signed Distance fields(SDF) is a tecnique that uses raymarching to take a position as an input, and outputs the distance from that position to the nearest part of a shape. After we gather all the points that we need. Its time to use the raymarching algorithm to render the SDF. By Checking if you hit a point or not, you can determine the color of the pixel. If it hits a point you render the shape. if not then you render it transparent. You can then add a lighting pass, textures or anything else that would be passed through a HLSL Shader. Code for raymarching would look something like this in GLSL. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+float depth = start;
+for (int i = 0; i < MAX_MARCHING_STEPS; i++) {
+    float dist = sceneSDF(eye + depth * viewRayDirection);
+    if (dist < EPSILON) {
+        // We're inside the scene surface!
+        return depth;
+    }
+    // Move along the view ray
+    depth += dist;
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    if (depth >= end) {
+        // Gone too far; give up
+        return end;
+    }
+}
+return end;
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
