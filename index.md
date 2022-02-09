@@ -26,7 +26,7 @@ return end;
 
 While this does the raymarching code. It does none of the lighting passes or texture passes. We go through and do that ourselves. Using some Signed Distance code for a fractal, we can render a fractal. Our Blueprint looks something like this, Just taking in the important pieces we need and passing them into a custom function that handles the raymarching, and the SDF math.
 
-![Blueprint](/docs/assets/logo.png)
+![Blueprint](/docs/assets/Blueprint.png)
 
 Fractal Code
 ```
