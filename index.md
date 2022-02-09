@@ -24,6 +24,40 @@ for (int i = 0; i < MAX_MARCHING_STEPS; i++) {
 return end;
 ```
 
+While this does the raymarching code. It does none of the lighting passes or texture passes. We go through and do that ourselves. Using some Signed Distance code for a fractal, we can render a fractal. 
+
+Fractal Code
+```
+float mandelbulbSDF( float3 p, float power ) {
+	float3 w = p;
+    float m = dot(w,w);
+	float dz = 1.0;
+
+	for( int i=0; i<3; i++ )
+    {
+        dz = power*pow(sqrt(m), power - 1.0 )*dz + 1.0;
+
+        float r = length(w);
+        float b = power*acos( w.y/r);
+        float a = power*atan2( w.x, w.z );
+        w = p + pow(r,power) * float3( sin(b)*sin(a), cos(b), sin(b)*cos(a) );
+
+        m = dot(w,w);
+		if( m > 256.0 )
+            break;
+    }
+
+    return 0.25*log(m)*sqrt(m)/dz;
+}
+
+
+float sceneSDF( float3 pos ) {
+ 	return mandelbulbSDF( pos, 7.0 );
+}
+```
+So using these pieces of code we can render a fractal.
+
+
 
 ### Jekyll Themes
 
