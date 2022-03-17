@@ -4,7 +4,7 @@ description: Website and Blog
 cover: assets/images/radhakrishna.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
+baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
 url: "https:///iXiphos.github.io" # the base hostname & protocol for your site
 
 pagination:
@@ -18,7 +18,6 @@ pagination:
   per_page: 5
 
 # Social
-facebook: facebook
 twitter: twitter
 github:  github
 
