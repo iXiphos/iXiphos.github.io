@@ -22,10 +22,8 @@ twitter: twitter
 github:  github
 
 #Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
-
+about: /about
+contact: /contact
 
 permalink: /:title
 
