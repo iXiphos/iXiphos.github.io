@@ -22,8 +22,8 @@ twitter: twitter
 github:  github
 
 #Additional Pages
-about: about
-contact: contact
+about: /about
+contact: /contact
 
 permalink: /:title
 
