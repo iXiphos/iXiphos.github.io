@@ -47,7 +47,7 @@ lsi: False
 username: iXiphos #github username
 repo: iXiphos.github.io #github repository
 branch: master #branch
-relative_source: .. #source directory
+relative_source: ../ #source directory
 destination: ../hanuman-pages/ #destination directory
 production_url:  https://samanyougarg.com/
 source_url:  https://github.com/samanyougarg/hanuman #source repository url
