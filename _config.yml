@@ -1,11 +1,11 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+title: Aidan Murphy
+description: Website and Blog
 cover: assets/images/radhakrishna.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
+url: "https://iXiphos.github.io" # the base hostname & protocol for your site
 
 pagination:
 
@@ -18,15 +18,12 @@ pagination:
   per_page: 5
 
 # Social
-facebook: facebook
 twitter: twitter
 github:  github
 
 #Additional Pages
 about: about
 contact: contact
-privacy-policy: privacy-policy
-
 
 permalink: /:title
 
@@ -47,10 +44,10 @@ plugins:
 # Settings for rake task
 safe: False
 lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
+username: iXiphos #github username
+repo: iXiphos.github.io #github repository
 branch: master #branch
-relative_source: ../hanuman/ #source directory
+relative_source: ../ #source directory
 destination: ../hanuman-pages/ #destination directory
 production_url:  https://samanyougarg.com/
 source_url:  https://github.com/samanyougarg/hanuman #source repository url
