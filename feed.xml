@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2022 16:11:45 -0400</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2022 16:11:45 -0400</lastBuildDate>
-    <generator>Jekyll v4.2.2</generator>
+    <title>Aidan Murphy</title>
+    <description>Website and Blog</description>
+    <link>https://iXiphos.github.io/</link>
+    <atom:link href="https://iXiphos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 18 Mar 2022 17:02:35 -0400</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2022 17:02:35 -0400</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -21,18 +21,20 @@
 
 &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 18 Mar 2022 16:10:59 -0400</pubDate>
-        <link>/jekyll/update/2022/03/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/jekyll/update/2022/03/18/welcome-to-jekyll.html</guid>
+        <link>https://iXiphos.github.io/welcome-to-jekyll</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
@@ -84,33 +86,33 @@
 &lt;h3&gt;Buttons&lt;/h3&gt;
 
 &lt;main class=&quot;flex flex-wrap justify-around align-item items-center&quot;&gt;
-&lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
-&lt;h4&gt;Primary&lt;/h4&gt;
-&lt;button class=&quot;ampstart-btn&quot;&gt;
+  &lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
+    &lt;h4&gt;Primary&lt;/h4&gt;
+    &lt;p&gt;&lt;button class=&quot;ampstart-btn&quot;&gt;
 SUBMIT
-&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
-&lt;h4&gt;Primary Disabled&lt;/h4&gt;
-&lt;button class=&quot;ampstart-btn&quot; disabled=&quot;&quot;&gt;
+&lt;/button&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
+    &lt;h4&gt;Primary Disabled&lt;/h4&gt;
+    &lt;p&gt;&lt;button class=&quot;ampstart-btn&quot; disabled=&quot;&quot;&gt;
 SUBMIT
-&lt;/button&gt;
-&lt;/div&gt;
+&lt;/button&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
 
 &lt;main class=&quot;flex flex-wrap justify-around align-item items-center&quot;&gt;
-&lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
-&lt;h4&gt;Secondary&lt;/h4&gt;
-&lt;button class=&quot;ampstart-btn ampstart-btn-secondary&quot;&gt;
+  &lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
+    &lt;h4&gt;Secondary&lt;/h4&gt;
+    &lt;p&gt;&lt;button class=&quot;ampstart-btn ampstart-btn-secondary&quot;&gt;
 SUBMIT
-&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
-&lt;h4&gt;Secondary Disabled&lt;/h4&gt;
-&lt;button class=&quot;ampstart-btn ampstart-btn-secondary&quot; disabled=&quot;&quot;&gt;
+&lt;/button&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex flex-column mb2 items-center&quot;&gt;
+    &lt;h4&gt;Secondary Disabled&lt;/h4&gt;
+    &lt;p&gt;&lt;button class=&quot;ampstart-btn ampstart-btn-secondary&quot; disabled=&quot;&quot;&gt;
 SUBMIT
-&lt;/button&gt;
-&lt;/div&gt;
+&lt;/button&gt;&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
 
 &lt;hr /&gt;
@@ -413,8 +415,8 @@ The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
 &lt;/amp-youtube&gt;
 </description>
         <pubDate>Wed, 29 Nov 2017 23:00:00 -0500</pubDate>
-        <link>/2017/11/29/style-guide.html</link>
-        <guid isPermaLink="true">/2017/11/29/style-guide.html</guid>
+        <link>https://iXiphos.github.io/style-guide</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/style-guide</guid>
         
         <category>guide</category>
         
@@ -431,8 +433,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Tue, 28 Nov 2017 23:00:00 -0500</pubDate>
-        <link>/2017/11/28/sample.html</link>
-        <guid isPermaLink="true">/2017/11/28/sample.html</guid>
+        <link>https://iXiphos.github.io/sample</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/sample</guid>
         
         <category>test</category>
         
@@ -471,8 +473,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 27 Nov 2017 23:00:00 -0500</pubDate>
-        <link>/2017/11/27/code.html</link>
-        <guid isPermaLink="true">/2017/11/27/code.html</guid>
+        <link>https://iXiphos.github.io/code</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/code</guid>
         
         <category>code</category>
         
@@ -491,23 +493,26 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
 
 &lt;h3 id=&quot;image-with-heading&quot;&gt;Image With Heading&lt;/h3&gt;
 &lt;figure class=&quot;ampstart-image-with-heading  m0 relative mb4&quot;&gt;
-&lt;amp-img src=&quot;assets/images/shiva.jpg&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
-&lt;figcaption class=&quot;absolute right-0 bottom-0 left-0&quot;&gt;
-&lt;header class=&quot;ampstart-image-heading px2 py2 line-height-4&quot;&gt;&lt;h1&gt;Shiva&lt;/h1&gt;&lt;/header&gt;
-&lt;/figcaption&gt;
+  &lt;amp-img src=&quot;assets/images/shiva.jpg&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption class=&quot;absolute right-0 bottom-0 left-0&quot;&gt;
+    &lt;header class=&quot;ampstart-image-heading px2 py2 line-height-4&quot;&gt;
+      &lt;h1&gt;Shiva&lt;/h1&gt;
+    &lt;/header&gt;
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;image-with-caption&quot;&gt;Image With Caption&lt;/h3&gt;
 &lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
-&lt;amp-img src=&quot;assets/images/shiva.jpg&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
-&lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.
+  &lt;amp-img src=&quot;assets/images/shiva.jpg&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
+    &lt;p&gt;Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.
 &lt;span class=&quot;ampstart-image-credit block bold&quot;&gt;
 Taken by
 &lt;a href=&quot;#&quot; role=&quot;author&quot;&gt;Parvati&lt;/a&gt;
-&lt;/span&gt;
-&lt;/figcaption&gt;
+&lt;/span&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;hr /&gt;
@@ -532,8 +537,8 @@ Taken by
 &lt;/amp-audio&gt;
 </description>
         <pubDate>Sun, 26 Nov 2017 23:00:00 -0500</pubDate>
-        <link>/2017/11/26/media.html</link>
-        <guid isPermaLink="true">/2017/11/26/media.html</guid>
+        <link>https://iXiphos.github.io/media</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/media</guid>
         
         <category>media</category>
         
