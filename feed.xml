@@ -5,9 +5,74 @@
     <description>Website and Blog</description>
     <link>https://iXiphos.github.io/</link>
     <atom:link href="https://iXiphos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2022 18:33:24 -0400</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2022 18:33:24 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2022 14:03:41 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2022 14:03:41 -0400</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Escape From The Body Snatchers</title>
+        <description>&lt;hr /&gt;
+
+&lt;h3 id=&quot;trailer&quot;&gt;Trailer&lt;/h3&gt;
+
+&lt;p&gt;Hi, I was one of the programmers who worked on Escape from the Body Snatchers as a submission into the Montreal Ubisoft Game Lab Competion. This is the trailer for the final product, Enjoy!&lt;/p&gt;
+
+&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;NOqbkJuiVwM&quot;&gt;
+&lt;/amp-youtube&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;about-the-game&quot;&gt;About the Game&lt;/h3&gt;
+
+&lt;p&gt;In a secret military bunker similar to Area 51, a science experiment has escaped from containment and is now hunting the scientists in the facility. One player plays as this monstrous experiment on the hunt and the rest play as the surviving scientists, trying to wait out the clock for the emergency systems to reactivate. Escape From The Bodysnatcher is an asymmetric isometric multiplayer action game in which players play as humans avoiding the monster, controlled by a random player at the start of the game. As the monster eats players, the consumed take partial control over the monster’s movements. Players must work together to avoid getting eaten or work together to consume the rest. The game is designed to be played by anybody, so controls are minimal, sticking to using only the joystick or WASD to move around.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;start-of-the-project&quot;&gt;Start of the Project&lt;/h3&gt;
+&lt;p&gt;Despite neither me or my other programmer having experience in Unreal Engine, we decided that it was what we wanted to use in order to get some experience in Unreal and improve our skills as programmers. The theme was together/apart for the competition, this meant it required multiplayer and voice chat. This was something that neither me nor my other programmer, Chris Foster, was prepared for. So we hit the ground running and began doing research.&lt;/p&gt;
+
+&lt;p&gt;We Ended up Settling on using Vivox as our voice chat plugin. Vivox is something that is commonly used in industry and is easily integratable into Unreal Engine 4. Using it however still had its fair share of problems. We had players not connecting properly, some players not joined voice chat, some players in the wrong voice chat. But after plenty of trail and error we were able to get something we were happy with.&lt;/p&gt;
+
+&lt;p&gt;When it came to networking our game, we originally tried peer to peer. This however was inconsistant at best and some of our people were working much farther away meaning an increase in latancy. We ended up going with a server route. So for the first time, I spun up a server using one of our good mentors to help. We set up the connection permissions, set up the firewall and installed the server build of the game.&lt;/p&gt;
+
+&lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
+  &lt;amp-img src=&quot;assets/images/multiplayer.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
+    &lt;p&gt;The meme we made when we got it working.
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;People could connect, it was an amazing feeling. The two weeks we put into researching and preparing ourselves started to come together. While not perfect, we had the multiplayer. It was a good moment up until things begain to get more complicated.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;implementing-the-game&quot;&gt;Implementing the Game&lt;/h3&gt;
+&lt;p&gt;With multiplayer set up, everyone on Unreal Engine Source or a rocket build of it, we could begin work on the game. This however, was not an easy task. We kept running into replication errors, Things not getting set to the server and errors in general. So it was not gonna be easy to get the game working. So after reading throught Unreal’s Network Compendium multiple times, as well as refering to our mentors for help. We got monster movement working. We did this by allowing multiple players to possess the same object, then using the controllers inputs to create an adative value that then determines where the monster should move. While this was going on, I was mostly focused on making the monster gloop effect. I was not super experienced with fluid simulation, and looking back that is what it should have been done with, but I felt more comfortable trying to fake it.&lt;/p&gt;
+
+&lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
+  &lt;amp-img src=&quot;assets/images/monsterShader.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
+  &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
+    &lt;p&gt;Blob Shader Used for the Monster.
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This was not full blob, but after trying a few different approaches ranging from raymarching, to just a regular old vfx. Nothing quite worked like the shader we ended up with. So after having the artist tweek it and change it around, we were able to get a cool looking blob monster going. Then after doing this, we were able to get in a game loop and while not perfect, things were starting to come together&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;polishing-the-game&quot;&gt;Polishing the Game&lt;/h3&gt;
+&lt;p&gt;With the game loop in, we were able to focus on getting in art, updating levels, implementing UI, adding sounds, player feedback and game objectives. We had a lot of small stuff to do, this didn’t stop our groove we had going. We keep updating features, polishing features we liked and just overall making the game the best experience we can. Then after about a month and a half of polish, we were in the last stretch. After many late nights working on the game. After many heated aurguments about the game, we were just bug fixing and messing around. We added a little party room into the game, that has all of ours names. We made sure everything looked good and worked well.&lt;/p&gt;
+
+&lt;p&gt;Then we reached the turn in date. Despite having a few hickups, we turned in a game we were all super proud of. We even got nominated for best Game Design. While there was many hickups, nothing ever stopped us from moving foward and making a game that we all were proud of(despite being a little burned out).&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Mar 2022 22:00:00 -0400</pubDate>
+        <link>https://iXiphos.github.io/Escape-From-The-Body-Snatchers</link>
+        <guid isPermaLink="true">https://iXiphos.github.io/Escape-From-The-Body-Snatchers</guid>
+        
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -40,81 +105,6 @@
         <category>jekyll</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Escape From The Body Snatchers</title>
-        <description>&lt;hr /&gt;
-
-&lt;h3 id=&quot;trailer&quot;&gt;Trailer&lt;/h3&gt;
-
-&lt;p&gt;Hi, I was one of the programmers who worked on Escape from the Body Snatchers as a submission into the Montreal Ubisoft Game Lab Competion. This is the trailer for the final product, Enjoy!&lt;/p&gt;
-
-&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;NOqbkJuiVwM&quot;&gt;
-&lt;/amp-youtube&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;about-the-game&quot;&gt;About the Game&lt;/h3&gt;
-
-&lt;p&gt;In a secret military bunker similar to Area 51, a science experiment has escaped from containment and is now hunting the scientists in the facility. One player plays as this monstrous experiment on the hunt and the rest play as the surviving scientists, trying to wait out the clock for the emergency systems to reactivate. Escape From The Bodysnatcher is an asymmetric isometric multiplayer action game in which players play as humans avoiding the monster, controlled by a random player at the start of the game. As the monster eats players, the consumed take partial control over the monster’s movements. Players must work together to avoid getting eaten or work together to consume the rest. The game is designed to be played by anybody, so controls are minimal, sticking to using only the joystick or WASD to move around.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;start-of-the-project&quot;&gt;Start of the Project&lt;/h3&gt;
-&lt;p&gt;Despite neither me or my other programmer having experience in Unreal Engine, we decided that it was what we wanted to use in order to get some experience in Unreal and improve our skills as programmers. The theme was together/apart for the competition, this meant it required multiplayer and voice chat. This was something that neither me nor my other programmer, Chris Foster, was prepared for. So we hit the ground running and began doing research.&lt;/p&gt;
-
-&lt;p&gt;We Ended up Settling on using Vivox as our voice chat plugin. Vivox is something that is commonly used in industry and is easily integratable into Unreal Engine 4. Using it however still had its fair share of problems. We had players not connecting properly, some players not joined voice chat, some players in the wrong voice chat. But after plenty of trail and error we were able to get something we were happy with.&lt;/p&gt;
-
-&lt;p&gt;When it came to networking our game, we originally tried peer to peer. This however was inconsistant at best and some of our people were working much farther away meaning an increase in latancy. We ended up going with a server route. So for the first time, I spun up a server using one of our good mentors to help. We set up the connection permissions, set up the firewall and installed the server build of the game.&lt;/p&gt;
-
-&lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
-  &lt;amp-img src=&quot;assets/images/multiplayer.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
-    &lt;p&gt;The meme we made when we got it working.
-&lt;span class=&quot;ampstart-image-credit block bold&quot;&gt;
-Taken by
-&lt;a href=&quot;#&quot; role=&quot;author&quot;&gt;Aidan&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;People could connect, it was an amazing feeling. The two weeks we put into researching and preparing ourselves started to come together. While not perfect, we had the multiplayer. It was a good moment up until things begain to get more complicated.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;implementing-the-game&quot;&gt;Implementing the Game&lt;/h3&gt;
-&lt;p&gt;With multiplayer set up, everyone on Unreal Engine Source or a rocket build of it, we could begin work on the game. This however, was not an easy task. We kept running into replication errors, Things not getting set to the server and errors in general. So it was not gonna be easy to get the game working. So after reading throught Unreal’s Network Compendium multiple times, as well as refering to our mentors for help. We got monster movement working. We did this by allowing multiple players to possess the same object, then using the controllers inputs to create an adative value that then determines where the monster should move. While this was going on, I was mostly focused on making the monster gloop effect. I was not super experienced with fluid simulation, and looking back that is what it should have been done with, but I felt more comfortable trying to fake it.&lt;/p&gt;
-
-&lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
-  &lt;amp-img src=&quot;assets/images/monsterShader.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
-  &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
-    &lt;p&gt;Blob Shader Used for the Monster.
-&lt;span class=&quot;ampstart-image-credit block bold&quot;&gt;
-Taken by
-&lt;a href=&quot;#&quot; role=&quot;author&quot;&gt;Aidan&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This was not full blob, but after trying a few different approaches ranging from raymarching, to just a regular old vfx. Nothing quite worked like the shader we ended up with. So after having the artist tweek it and change it around, we were able to get a cool looking blob monster going. Then after doing this, we were able to get in a game loop and while not perfect, things were starting to come together&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;polishing-the-game&quot;&gt;Polishing the Game&lt;/h3&gt;
-&lt;p&gt;With the game loop in, we were able to focus on getting in art, updating levels, implementing UI, adding sounds, player feedback and game objectives. We had a lot of small stuff to do, this didn’t stop our groove we had going. We keep updating features, polishing features we liked and just overall making the game the best experience we can. Then after about a month and a half of polish, we were in the last stretch. After many late nights working on the game. After many heated aurguments about the game, we were just bug fixing and messing around. We added a little party room into the game, that has all of ours names. We made sure everything looked good and worked well.&lt;/p&gt;
-
-&lt;p&gt;Then we reached the turn in date. Despite having a few hickups, we turned in a game we were all super proud of. We even got nominated for best Game Design. While there was many hickups, nothing ever stopped us from moving foward and making a game that we all were proud of(despite being a little burned out).&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Nov 2017 23:00:00 -0500</pubDate>
-        <link>https://iXiphos.github.io/Escape-From-The-Body-Snatchers</link>
-        <guid isPermaLink="true">https://iXiphos.github.io/Escape-From-The-Body-Snatchers</guid>
-        
-        <category>Raven</category>
-        
-        <category>Sheild</category>
-        
         
       </item>
     
