@@ -41,8 +41,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://amurphy.dev//contact/",
   "headline": "Contact",
-  "datePublished": "2022-03-21T15:51:09-04:00",
-  "dateModified": "2022-03-21T15:51:09-04:00",
+  "datePublished": "2022-03-21T16:56:09-04:00",
+  "dateModified": "2022-03-21T16:56:09-04:00",
   "description": "Website and Blog",
   "author": {
     "@type": "Person",
@@ -2600,8 +2600,6 @@ body > figure > figcaption > header > h2 {
 
   <ul class="ampstart-sidebar-faq list-reset m0">
   
-    <li class="ampstart-faq-item"><a href="contact" class="text-decoration-none">Contact</a></li>
-  
   
   </ul>
 </amp-sidebar>
@@ -2614,27 +2612,66 @@ body > figure > figcaption > header > h2 {
     </div>
     <section class="post-content">
       <a name="topofpage"></a>
-      <form action="https://getform.io/f/fecadd41-15df-4456-aec0-66dc289214a2" method="POST" enctype="multipart/form-data" target="_blank">
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      &lt;div class="form-group"&gt;
-        &lt;label for="exampleInputEmail1" required="required"&gt;Email address&lt;/label&gt;
-        &lt;input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
-      &lt;/div&gt;
-	  
-      &lt;div class="form-group"&gt;
-        &lt;label for="InputName"&gt;Name&lt;/label&gt;
-        &lt;input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Enter your name" required="required"&gt;
-      &lt;/div&gt;
+      <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-      &lt;div class="form-group"&gt;
-        &lt;label for="InputName"&gt;Name&lt;/label&gt;
-        &lt;input type="text" name="Enter Message" class="form-control" id="ExampleMessage" placeholder="Enter your name" required="required"&gt;
-      &lt;/div&gt;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-      &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
-    &lt;/form&gt;
-</code></pre></div>  </div>
-</form>
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="https://getform.io/f/fecadd41-15df-4456-aec0-66dc289214a2" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
     </section>
   </article>
 </main>
@@ -2670,12 +2707,7 @@ body > figure > figcaption > header > h2 {
             <li class="px1">
                 <a class="text-decoration-none ampstart-label" href="about">About</a>
             </li>
-             
-
-            <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="contact">Contact</a>
-            </li>
-             
+              
 
         </ul>
     </nav>
