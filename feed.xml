@@ -3,10 +3,10 @@
   <channel>
     <title>Aidan Murphy</title>
     <description>Website and Blog</description>
-    <link>https://iXiphos.github.io/</link>
-    <atom:link href="https://iXiphos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Mar 2022 15:27:20 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2022 15:27:20 -0400</lastBuildDate>
+    <link>https://amurphy.dev//</link>
+    <atom:link href="https://amurphy.dev//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 21 Mar 2022 15:37:38 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2022 15:37:38 -0400</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -38,8 +38,7 @@
 &lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
   &lt;amp-img src=&quot;assets/images/multiplayer.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
-    &lt;p&gt;The meme we made when we got it working.
-&amp;lt;/span&amp;gt;&lt;/p&gt;
+    &lt;p&gt;The meme we made when we got it working.&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -53,8 +52,7 @@
 &lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
   &lt;amp-img src=&quot;assets/images/monsterShader.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
   &lt;figcaption class=&quot;h5 mt1 px3&quot;&gt;
-    &lt;p&gt;Blob Shader Used for the Monster.
-&amp;lt;/span&amp;gt;&lt;/p&gt;
+    &lt;p&gt;Blob Shader Used for the Monster.&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -68,8 +66,8 @@
 &lt;p&gt;Then we reached the turn in date. Despite having a few hickups, we turned in a game we were all super proud of. We even got nominated for best Game Design. While there was many hickups, nothing ever stopped us from moving foward and making a game that we all were proud of(despite being a little burned out).&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Mar 2022 22:00:00 -0400</pubDate>
-        <link>https://iXiphos.github.io/Escape-From-The-Body-Snatchers</link>
-        <guid isPermaLink="true">https://iXiphos.github.io/Escape-From-The-Body-Snatchers</guid>
+        <link>https://amurphy.dev//Escape-From-The-Body-Snatchers</link>
+        <guid isPermaLink="true">https://amurphy.dev//Escape-From-The-Body-Snatchers</guid>
         
         
       </item>
@@ -98,8 +96,8 @@
 
 </description>
         <pubDate>Fri, 18 Mar 2022 16:10:59 -0400</pubDate>
-        <link>https://iXiphos.github.io/welcome-to-jekyll</link>
-        <guid isPermaLink="true">https://iXiphos.github.io/welcome-to-jekyll</guid>
+        <link>https://amurphy.dev//welcome-to-jekyll</link>
+        <guid isPermaLink="true">https://amurphy.dev//welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
