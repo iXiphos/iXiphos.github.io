@@ -5,8 +5,8 @@
     <description>Website and Blog</description>
     <link>https://amurphy.dev//</link>
     <atom:link href="https://amurphy.dev//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Mar 2022 19:01:00 -0400</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2022 19:01:00 -0400</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2022 18:11:39 -0400</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2022 18:11:39 -0400</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -31,9 +31,9 @@
 &lt;h3 id=&quot;start-of-the-project&quot;&gt;Start of the Project&lt;/h3&gt;
 &lt;p&gt;Despite neither me or my other programmer having experience in Unreal Engine, we decided that it was what we wanted to use in order to get some experience in Unreal and improve our skills as programmers. The theme was together/apart for the competition, this meant it required multiplayer and voice chat. This was something that neither me nor my other programmer, Chris Foster, was prepared for. So we hit the ground running and began doing research.&lt;/p&gt;
 
-&lt;p&gt;We Ended up Settling on using Vivox as our voice chat plugin. Vivox is something that is commonly used in industry and is easily integratable into Unreal Engine 4. Using it however still had its fair share of problems. We had players not connecting properly, some players not joined voice chat, some players in the wrong voice chat. But after plenty of trail and error we were able to get something we were happy with.&lt;/p&gt;
+&lt;p&gt;We Ended up Settling on using Vivox as our voice chat plugin. Vivox is something that is commonly used in industry and is easily integratable into Unreal Engine 4. Using it however still had its fair share of problems. We had players not connecting properly, some players not joining voice chat at all and some players in the wrong voice chat. But after plenty of trail and error we were able to get something we were happy with.&lt;/p&gt;
 
-&lt;p&gt;When it came to networking our game, we originally tried peer to peer. This however was inconsistant at best and some of our people were working much farther away meaning an increase in latancy. We ended up going with a server route. So for the first time, I spun up a server using one of our good mentors to help. We set up the connection permissions, set up the firewall and installed the server build of the game.&lt;/p&gt;
+&lt;p&gt;When it came to networking our game, we originally tried peer to peer. This however was inconsistant at best and some of our people were working much farther away meaning an increase in latancy. We ended up going with a server route. So for the first time, I spun up a server using one of our mentors to help. We set up the connection permissions, set up the firewall and installed the server build of the game.&lt;/p&gt;
 
 &lt;figure class=&quot;ampstart-image-with-caption m0 relative mb4&quot;&gt;
   &lt;amp-img src=&quot;assets/images/multiplayer.png&quot; width=&quot;656&quot; height=&quot;400&quot; layout=&quot;responsive&quot; alt=&quot;&quot; class=&quot;mb3&quot;&gt;&lt;/amp-img&gt;
@@ -42,7 +42,7 @@
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;People could connect, it was an amazing feeling. The two weeks we put into researching and preparing ourselves started to come together. While not perfect, we had the multiplayer. It was a good moment up until things begain to get more complicated.&lt;/p&gt;
+&lt;p&gt;People could connect, it was an amazing feeling. The two weeks we put into researching and preparing ourselves started to come together. While not perfect, we had the multiplayer. It was something I had never done but through research and pushing my skills I was able to get it working.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -56,53 +56,19 @@
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This was not full blob, but after trying a few different approaches ranging from raymarching, to just a regular old vfx. Nothing quite worked like the shader we ended up with. So after having the artist tweek it and change it around, we were able to get a cool looking blob monster going. Then after doing this, we were able to get in a game loop and while not perfect, things were starting to come together&lt;/p&gt;
+&lt;p&gt;This was not full blob, but after trying a few different approaches ranging from raymarching, to just a regular old vfx. Nothing quite worked like the shader we ended up with. So after having the artist tweek it and change it around, we were able to get a cool looking blob monster going. Then after doing this, we were able to get in a game loop and while not perfect, things were starting to come together! We continued to network our game, work on adding objectives in such has having to move the batteries around, getting the timer up and running. All of this was stuff that should have been simple but replication always made things more complicated, batteries were not being picked up for some clients, the server did detect them being used. But after many tireless nights of bug fixing, we were able to get it up and running.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;polishing-the-game&quot;&gt;Polishing the Game&lt;/h3&gt;
 &lt;p&gt;With the game loop in, we were able to focus on getting in art, updating levels, implementing UI, adding sounds, player feedback and game objectives. We had a lot of small stuff to do, this didn’t stop our groove we had going. We keep updating features, polishing features we liked and just overall making the game the best experience we can. Then after about a month and a half of polish, we were in the last stretch. After many late nights working on the game. After many heated aurguments about the game, we were just bug fixing and messing around. We added a little party room into the game, that has all of ours names. We made sure everything looked good and worked well.&lt;/p&gt;
 
-&lt;p&gt;Then we reached the turn in date. Despite having a few hickups, we turned in a game we were all super proud of. We even got nominated for best Game Design. While there was many hickups, nothing ever stopped us from moving foward and making a game that we all were proud of(despite being a little burned out).&lt;/p&gt;
+&lt;p&gt;Then we reached the turn in date. Despite having a few hickups, we turned in a game we were all super proud of. We even got nominated for best Game Design. While there was many hickups, nothing ever stopped us from moving foward and making a game that we all were proud of(despite being a little burned out at the end). You can check out our github for the project here at https://github.com/iXiphos/UbisoftCompetition&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Mar 2022 22:00:00 -0400</pubDate>
         <link>https://amurphy.dev//Escape-From-The-Body-Snatchers</link>
         <guid isPermaLink="true">https://amurphy.dev//Escape-From-The-Body-Snatchers</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;
-  &lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 18 Mar 2022 16:10:59 -0400</pubDate>
-        <link>https://amurphy.dev//welcome-to-jekyll</link>
-        <guid isPermaLink="true">https://amurphy.dev//welcome-to-jekyll</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
