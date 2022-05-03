@@ -8,19 +8,19 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <link rel="shortcut icon" href="https://amurphy.dev/assets/images/XiphosSymbol.png" type="image/png" />
 
-  <title>Aidan Murphy</title>
+  <title>Untitled Shooter</title>
 
-  <meta name="description" content="Website and Blog">
+  <meta name="description" content="">
 
   <meta property="og:site_name" content="Aidan Murphy" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Aidan Murphy" />
+  <meta property="og:title" content="Untitled Shooter" />
   <meta property="og:description" content="Website and Blog" />
-  <meta property="og:url" content="https://amurphy.dev/404.html" />
+  <meta property="og:url" content="https://amurphy.dev/portfolio" />
   <meta property="og:image" content="https://amurphy.dev/assets/images/tree.jpg" />
   <meta property="article:publisher" content="https://www.facebook.com/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aidan Murphy" />
+  <meta name="twitter:title" content="Untitled Shooter" />
   <meta name="twitter:description" content="Website and Blog" />
   <meta name="twitter:url" content="https://amurphy.dev/" />
   <meta name="twitter:image" content="https://amurphy.dev/assets/images/tree.jpg" />
@@ -31,7 +31,7 @@
   <meta property="og:image:width" content="2000" />
   <meta property="og:image:height" content="666" />
 
-  <link rel="canonical" href="https://amurphy.dev/404.html" />
+  <link rel="canonical" href="https://amurphy.dev/portfolio" />
   <link rel="alternate" type="application/rss+xml" title="Aidan Murphy" href="https://amurphy.dev/feed.xml">
 
   <script type="application/ld+json">
@@ -39,11 +39,11 @@
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://amurphy.dev//404.html",
-  "headline": "Aidan Murphy",
-  "datePublished": "2022-05-03T14:51:28-04:00",
-  "dateModified": "2022-05-03T14:51:28-04:00",
-  "description": "Website and Blog",
+  "mainEntityOfPage": "https://amurphy.dev//portfolio",
+  "headline": "Untitled Shooter",
+  "datePublished": "2022-05-02T22:00:00-04:00",
+  "dateModified": "2022-05-02T22:00:00-04:00",
+  "description": "",
   "author": {
     "@type": "Person",
     "name": ""
@@ -2645,26 +2645,135 @@ input[type=submit]:hover {
 </amp-sidebar>
 
 
-    <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      
 
-<div class="container">
-  <h1>404</h1>
+    <main id="content" role="main" class="">
+      <article class="recipe-article">
+        <header>
+          
+          <h1 class="mb1 px3">Untitled Shooter</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+          <address class="ampstart-byline clearfix mb4 px3 h5">
+            <time class="ampstart-byline-pubdate block bold my1" datetime=" 2 May 2022"> 2 May 2022</time>
+          </address>
+        </header>
+
+  
+
+    <div class="px3 mb4">
+      <hr />
+
+<h3 id="untitled-shooter">Untitled Shooter</h3>
+<p>This game is heavily inspired by deathloop. Using some special abilities and a gun, you can beat enemies in creative ways. Currently there is a blink, grab, bullet time and the ability to mark multiple enemies that will share the damage they take. Using a custom movement system inspired from ishonored/deathloop.</p>
+
+<hr />
+
+<h3 id="blink">Blink</h3>
+<p>By raycast from the center of the camera, you can find the point it hits or the point at the max range. Doing this will return a vector 3 that is your blink location, on release you should teleport to that location, if you can mantle, then mantle.</p>
+<amp-youtube width="480" height="270" layout="responsive" data-videoid="2o3YSKESZfo">
+</amp-youtube>
+
+<hr />
+
+<h3 id="grab">Grab</h3>
+<p>Raycast infront of the player, check if you hit something, then while the key is held down, keep it in that position relative to the camera. On release you can then add force to that enemy and send them flying.</p>
+<amp-youtube width="480" height="270" layout="responsive" data-videoid="t3T9KE_pmds">
+</amp-youtube>
+
+<hr />
+
+<h3 id="bullet-time">Bullet Time</h3>
+<p>When the button is help down, reduce the time scale. This has a charge so when the charge is over, end bullet time. Only recharge while the player is not holding down the button to activate.</p>
+<amp-youtube width="480" height="270" layout="responsive" data-videoid="zzc1r-pePnk">
+</amp-youtube>
+
+<hr />
+
+<h3 id="mindlink">MindLink</h3>
+<p>Mindlink, fires a raycast, then if it hits an enemy, adds them to a list. If you target a enemy that is already mind linked, you remove them from the list instead. Any enemy in the list, there health component has a variable called marked. If they are marked when the player deals damage it instead calls a special function that gets all enemies in the array and deals damage to them. If they were to die, they are removed from the list and allowing the player to mark a new enemy. You can easily change how many enemies are marked and the distance at which you can mark them.</p>
+<amp-youtube width="480" height="270" layout="responsive" data-videoid="YMvXaTGhry4">
+</amp-youtube>
+
+<hr />
+
+<h3 id="the-process">The Process</h3>
+<p>I wanted to make this game as a way to brush up on Unity as it has been a while since I sat down and used it. During this project, I did inheritance, gameplay, systems, and even some vfx programming. There was plenty of problems, specifically the mindlink, where you can target up to 3 enemies and they share damage. Creating a easy to use system to allow the enemies to split damage was not an easy task. For some reason the marking was calling twice, so enemies would get marked, then unmark immediately after. This took a while to figure out the problem as, I thought that they were just unmarking themselves before even marking. The blink has many problems with getting the point directly in front of the player and required me to use some different math because of the way I was handling the transform of the player for the movement. The grab was not super difficult and the bullet time wasn’t either. The big thing with these was creating an easily expandable system that lets you cycle which upgrade you are using at run time. This could easily be expanded into a system like dishonored has where you can cycle abilities and weapons easily. If I wanted to, I could quickly add new abilities and with a few changes new weapons as well. I was planning on more weapons but due to the job search taking up large chunks of time I wasn’t able to get nearly as much done.</p>
+
+<hr />
+
+<h3 id="job-search">Job Search</h3>
+<p>I am going to take this section out after but want to talk about it for the class. I spent a lot of time during this project not working on the project but instead updating resume, coverletter and brushing up on many c++ skills that I haven’t used in a while. I always sound like an ad but hackerrank is super useful for this and have gotten a few people using it because of how great it is to brush up on algorithms, math and system design. As well as most question being similar to something you would see on a job programming test. I even had a question on a test for prophecy games that was something I had done in preparation for the test. Sadly none of them worked out but I learned so much in terms of programming, problem solving in short periods of time, and execution of tasks. I had a test in c and the rest in c++. Prepping for the one in C I was able to prepare by writing my own memory manager that you could use instead of malloc. As well as learning more about malloc, free and many other memory related techniques. The C++, I learned more about modern C++, standard library and many more functions that I had never heard about before. It was an amazing learning experience, and I feel much more confident and proficient in C++.</p>
+
+    </div>
+
+    <!-- Start Related article -->
+
+    
+    <!-- End Related article -->
+<hr>
+
+
+  
+
+
+<!-- Start Socialbox -->
+<div class="ampstart-social-box mb4">
+  <amp-social-share type="twitter" aria-label="Share this on Twitter"></amp-social-share>
+  <amp-social-share type="facebook" aria-label="Share this on Facebook" data-param-app_id="145393166088568"></amp-social-share>
+  <amp-social-share type="gplus" aria-label="Share this on Google Plus"></amp-social-share>
+  <amp-social-share type="email" aria-label="Share this with E-mail"></amp-social-share>
 </div>
+<!-- End Socialbox -->
+
+
+  <footer class="ampstart-footer flex flex-column items-center px3">
+    <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+        
+
+        <li>
+            <a href="https://twitter.com/iXiphos" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49">
+                    <title>Twitter</title>
+                    <path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path>
+                </svg>
+            </a>
+        </li>
+          
+
+        <li>
+            <a href="https://github.com/iXiphos" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 64 64">
+                    <path d="M22.4 1.4C-.8 9-7.4 38.4 10.5 54.9 14.7 58.8 20.4 62 23 62c.5 0 1-1.6 1-3.5 0-3.3-.2-3.5-3.5-3.5-3.5 0-4.2-.5-9-6.6-4.4-5.6-2.3-6.2 3.2-.9 4.2 4 7.5 4.5 9.8 1.2 1.4-2.1 1.4-2.2-.7-3-6-2.3-8.8-4.2-10.2-7.2-2.1-4.3-2.1-12.4 0-15.3.8-1.2 1.2-2.7.9-3.2-1-1.6.5-7 1.8-7 .7 0 2.4.6 3.8 1.4 1.7.9 6 1.4 11.9 1.4s10.2-.5 11.9-1.4c1.4-.8 3.1-1.4 3.8-1.4 1.3 0 2.8 5.4 1.8 7-.3.5.1 2 .9 3.2 1.8 2.5 2.1 10.3.7 14.1-1.4 3.6-5 6.6-9.3 7.8-3.3.9-3.7 1.2-2.8 2.9.5 1 1 4.6 1 7.9 0 3.5.4 6.1 1 6.1 5.2 0 15.8-8.8 19.8-16.5 2.3-4.3 2.7-6.3 2.7-13.5 0-7-.4-9.4-2.4-13.5C57.9 12.2 51.8 6 45.6 3 39.6.2 28.5-.6 22.4 1.4z" class="ampstart-icon ampstart-icon-github" />
+                </svg>
+            </a>
+        </li>
+        
+
+    </ul>
+    <nav class="ampstart-footer-nav">
+        <ul class="list-reset flex flex-wrap mb3">
+            
+
+            <li class="px1">
+                <a class="text-decoration-none ampstart-label" href="about">About</a>
+            </li>
+              
+
+        </ul>
+    </nav>
+    <small>
+        &copy; 2022
+    <a href=""></a> &nbsp; | &nbsp;  All Rights Reserved.
+
+    </small>
+    <small>
+      Published with <a href="https://jekyllrb.com/">Jekyll</a>
+      using <a href="https://github.com/samanyougarg/hanuman">Hanuman</a>
+    </small>
+</footer>
+
+
+</main>
 
 
     

@@ -5,9 +5,61 @@
     <description>Website and Blog</description>
     <link>https://amurphy.dev//</link>
     <atom:link href="https://amurphy.dev//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Mar 2022 11:50:42 -0400</pubDate>
-    <lastBuildDate>Wed, 23 Mar 2022 11:50:42 -0400</lastBuildDate>
+    <pubDate>Tue, 03 May 2022 14:51:28 -0400</pubDate>
+    <lastBuildDate>Tue, 03 May 2022 14:51:28 -0400</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Untitled Shooter</title>
+        <description>&lt;hr /&gt;
+
+&lt;h3 id=&quot;untitled-shooter&quot;&gt;Untitled Shooter&lt;/h3&gt;
+&lt;p&gt;This game is heavily inspired by deathloop. Using some special abilities and a gun, you can beat enemies in creative ways. Currently there is a blink, grab, bullet time and the ability to mark multiple enemies that will share the damage they take. Using a custom movement system inspired from ishonored/deathloop.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;blink&quot;&gt;Blink&lt;/h3&gt;
+&lt;p&gt;By raycast from the center of the camera, you can find the point it hits or the point at the max range. Doing this will return a vector 3 that is your blink location, on release you should teleport to that location, if you can mantle, then mantle.&lt;/p&gt;
+&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;2o3YSKESZfo&quot;&gt;
+&lt;/amp-youtube&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;grab&quot;&gt;Grab&lt;/h3&gt;
+&lt;p&gt;Raycast infront of the player, check if you hit something, then while the key is held down, keep it in that position relative to the camera. On release you can then add force to that enemy and send them flying.&lt;/p&gt;
+&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;t3T9KE_pmds&quot;&gt;
+&lt;/amp-youtube&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;bullet-time&quot;&gt;Bullet Time&lt;/h3&gt;
+&lt;p&gt;When the button is help down, reduce the time scale. This has a charge so when the charge is over, end bullet time. Only recharge while the player is not holding down the button to activate.&lt;/p&gt;
+&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;zzc1r-pePnk&quot;&gt;
+&lt;/amp-youtube&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mindlink&quot;&gt;MindLink&lt;/h3&gt;
+&lt;p&gt;Mindlink, fires a raycast, then if it hits an enemy, adds them to a list. If you target a enemy that is already mind linked, you remove them from the list instead. Any enemy in the list, there health component has a variable called marked. If they are marked when the player deals damage it instead calls a special function that gets all enemies in the array and deals damage to them. If they were to die, they are removed from the list and allowing the player to mark a new enemy. You can easily change how many enemies are marked and the distance at which you can mark them.&lt;/p&gt;
+&lt;amp-youtube width=&quot;480&quot; height=&quot;270&quot; layout=&quot;responsive&quot; data-videoid=&quot;YMvXaTGhry4&quot;&gt;
+&lt;/amp-youtube&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-process&quot;&gt;The Process&lt;/h3&gt;
+&lt;p&gt;I wanted to make this game as a way to brush up on Unity as it has been a while since I sat down and used it. During this project, I did inheritance, gameplay, systems, and even some vfx programming. There was plenty of problems, specifically the mindlink, where you can target up to 3 enemies and they share damage. Creating a easy to use system to allow the enemies to split damage was not an easy task. For some reason the marking was calling twice, so enemies would get marked, then unmark immediately after. This took a while to figure out the problem as, I thought that they were just unmarking themselves before even marking. The blink has many problems with getting the point directly in front of the player and required me to use some different math because of the way I was handling the transform of the player for the movement. The grab was not super difficult and the bullet time wasn’t either. The big thing with these was creating an easily expandable system that lets you cycle which upgrade you are using at run time. This could easily be expanded into a system like dishonored has where you can cycle abilities and weapons easily. If I wanted to, I could quickly add new abilities and with a few changes new weapons as well. I was planning on more weapons but due to the job search taking up large chunks of time I wasn’t able to get nearly as much done.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;job-search&quot;&gt;Job Search&lt;/h3&gt;
+&lt;p&gt;I am going to take this section out after but want to talk about it for the class. I spent a lot of time during this project not working on the project but instead updating resume, coverletter and brushing up on many c++ skills that I haven’t used in a while. I always sound like an ad but hackerrank is super useful for this and have gotten a few people using it because of how great it is to brush up on algorithms, math and system design. As well as most question being similar to something you would see on a job programming test. I even had a question on a test for prophecy games that was something I had done in preparation for the test. Sadly none of them worked out but I learned so much in terms of programming, problem solving in short periods of time, and execution of tasks. I had a test in c and the rest in c++. Prepping for the one in C I was able to prepare by writing my own memory manager that you could use instead of malloc. As well as learning more about malloc, free and many other memory related techniques. The C++, I learned more about modern C++, standard library and many more functions that I had never heard about before. It was an amazing learning experience, and I feel much more confident and proficient in C++.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 May 2022 22:00:00 -0400</pubDate>
+        <link>https://amurphy.dev//portfolio</link>
+        <guid isPermaLink="true">https://amurphy.dev//portfolio</guid>
+        
+        
+      </item>
     
       <item>
         <title>Escape From The Body Snatchers</title>
